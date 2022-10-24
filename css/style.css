@@ -1,0 +1,138 @@
+:root{
+    --primary-color: #1c1c1e;
+    --secondary-color: #000000;
+    --tertiary-color: rgba(28,28,30,255);
+    --text-color: rgb(199, 199, 199);
+    --primary-accent-color: #0b84fe;
+    --secondary-accent-color: #2ed158;
+}
+*{
+    box-sizing: border-box;
+    /* outline: var(--text-color) 1px solid; */
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+}
+
+#song-title{
+    margin-top: .6em;
+}
+.site-title{
+    margin-bottom: 1em;
+}
+/* Songs Selector / intro*/
+.file-selector{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7)
+
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    padding-top: 1em;
+}
+.selector-intro{
+    font-size: 3.4rem;
+    margin-bottom: .4em;
+}
+
+.input{
+    margin-top: 3em;
+}
+
+
+.player-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.music-container{
+    background-color: var(--primary-color);
+    border-radius: 18px;
+    padding: 1em;
+    max-width: 80%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+}
+.action-btn{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border: 1px var(--text-color) solid;
+    border-radius: 12px;
+    padding: .3em 1.4em;
+}
+.action-btn-big{
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+}
+
+#img-container{
+    display: block;
+    height: 256px;
+    width: 256px;
+    background-size: contain;
+    border-radius: 16px;
+}
+
+.song-data{
+    display: block;
+}
+
+.progress-container{
+    background-color: var(--text-color);
+    cursor: pointer;
+    height: 10px;
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.progress{
+    background-color: var(--primary-accent-color);
+    height: 100%;
+    width: 0%;
+    border-radius: 16px;
+}
+
+#toggle-theme{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+
+    padding: .1em 1em;
+    font-size: 1.5rem;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
